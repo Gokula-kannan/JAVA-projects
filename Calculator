@@ -1,0 +1,37 @@
+import java.io.*;
+import java.util.*;
+public class MyClass {
+    public static void main(String args[]) {
+      Scanner sc = new Scanner(System.in);
+      long a , b, c=0;
+      int operation;
+      System.out.println("Welcome to My Calculator");
+      System.out.println("Enter the Two numbers: ");
+      a = sc.nextLong();
+      b = sc.nextLong();
+      System.out.println("Enter the Operation to be performed: \n1.Add \n2.Subtract \n3.Multiply \n4.Divide \n5.Modulus");
+      operation = sc.nextInt();
+      switch(operation) {
+          case 1:
+              c = a + b;
+              break;
+          case 2:
+              c = a - b;
+              break;
+          case 3:
+              c = a * b;
+              break;
+          case 4:
+              c = a / b;
+              break;
+          case 5:
+              c = a % b;
+              break;
+          default:
+              System.out.println("Enter valid Operation");
+              break;
+      }
+      System.out.println("Your Answer: " + c);
+       
+    }
+}
