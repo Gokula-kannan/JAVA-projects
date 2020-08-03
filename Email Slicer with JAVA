@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+public class MyClass {
+    public static void main(String args[]) {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter your Email: ");
+      String email;
+      email = sc.nextLine();
+      int address_symb = email.indexOf('@');
+      String email_username = email.substring(0,address_symb);
+      String email_domain = email.substring(address_symb+1,email.length());
+      System.out.println("Your Username: "+email_username);
+      System.out.println("Your Domain: "+email_domain);
+      
+    }
+}
